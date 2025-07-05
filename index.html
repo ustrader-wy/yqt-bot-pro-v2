@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YQT BOT PRO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Password Screen -->
+    <div id="passwordScreen">
+        <div class="password-box">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+            <button id="passwordBtn">Submit</button>
+            <p id="passwordError"></p>
+        </div>
+    </div>
+
+    <!-- Background Video -->
+    <video id="bgVideo" autoplay loop muted>
+        <source src="007f7388d209fb089c60f03aebc95335.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1>YQT BOT PRO</h1>
+        <h2>100% ACCURATE SIGNAL'S</h2>
+    </header>
+
+    <div class="container">
+        <img src="20250226_234233_0000.png" alt="Bot Logo" class="logo">
+
+        <div class="custom-dropdown">
+    <button class="dropdown-btn" id="platformBtn">
+        <img src="qu.png" alt="Quotex" id="platformIcon"> 
+        <span id="platformText">QUOTEX</span>
+        <span class="arrow">&#9662;</span>
+    </button>
+    <div class="dropdown-content" id="platformList">
+        <div class="dropdown-item" data-value="quotex" data-img="qu.png"> 
+            <img src="qu.png" alt="Quotex"><span>QUOTEX</span>
+        </div>
+        <div class="dropdown-item" data-value="binomo" data-img="bi.png">
+            <img src="bi.png" alt="Binomo"><span>BINOMO</span>
+        </div>
+        <div class="dropdown-item" data-value="expert" data-img="eo.png">
+            <img src="eo.png" alt="Expert Option"><span>EXPERT OPTION</span>
+        </div>
+        <div class="dropdown-item" data-value="pocket" data-img="po.png">
+            <img src="po.png" alt="Pocket Option"><span>POCKET OPTION</span>
+        </div>
+        <div class="dropdown-item" data-value="olymp" data-img="ot.png">
+            <img src="ot.png" alt="Olymp Trade"><span>OLYMP TRADE</span>
+        </div>
+        <div class="dropdown-item" data-value="iq" data-img="iq.png">
+            <img src="iq.png" alt="IQ Option"><span>IQ OPTION</span>
+        </div>
+    </div>
+        </div>
+        
+        <select id="currencySelect" class="select-box">
+              <option>USD/MXN (OTC)</option>
+<option>AUD/NZD (OTC)</option>
+<option>USD/NGN (OTC)</option>
+<option>USD/PHP (OTC)</option>
+<option>EUR/SGD (OTC)</option>
+<option>USD/BRL (OTC)</option>
+<option>NZD/CHF (OTC)</option>
+<option>USD/TRY (OTC)</option>
+<option>USD/PKR (OTC)</option>
+<option>USD/COP (OTC)</option>
+<option>UKBrent (OTC)</option>
+<option>USCrude (OTC)</option>
+<option>NZD/CAD (OTC)</option>
+<option>USD/DZD (OTC)</option>
+<option>USD/EGP (OTC)</option>
+<option>USD/INR (OTC)</option>
+<option>GBP/NZD (OTC)</option>
+<option>USD/BDT (OTC)</option>
+<option>NZD/USD (OTC)</option>
+<option>Pfizer Inc (OTC)</option>
+<option>Intel (OTC)</option>
+<option>Boeing Company (OTC)</option>
+<option>FACEBOOK INC (OTC)</option>
+<option>Johnson & Johnson (OTC)</option>
+<option>McDonald's (OTC)</option>
+<option>Microsoft (OTC)</option>
+<option>American Express (OTC)</option>
+        </select>
+
+        <select id="timeSelect" class="select-box">
+            <option value="5">05 sec</option>
+            <option value="10">10 sec</option>
+            <option value="15">15 sec</option>
+            <option value="30">30 sec</option>
+            <option value="60">1 min</option>
+            <option value="300">5 min</option>
+        </select>
+
+        <button id="getSignal" class="signal-btn">Get Signal</button>
+        <p id="timer"></p>
+        <p id="signalOutput"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
